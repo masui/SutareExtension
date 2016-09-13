@@ -56,5 +56,17 @@ do_sutare = ->
 
     $('body').append div
 
+maybe_old = ->
+  fresh_sites = [
+    'twitter'
+    'tumblr'
+    'facebook'
+    ]
+  old = true
+  for site in fresh_sites
+    old = false if location.href.match RegExp(site,'i')
+  old
+
 $ ->
-  setTimeout do_sutare, 1000
+  if maybe_old()
+    setTimeout do_sutare, 1000
