@@ -41,7 +41,7 @@ do_sutare = ->
       .css 'top','0'
       .css 'left','0'
       .css 'background-color','#ff0'
-      .css 'opacity', '0.3'
+      .css 'opacity', '0.4'
       .css 'pointer-events', 'none'    # イベントが透過するように
       .css 'font-size', '100px'
       .css 'line-height', '100px'
@@ -58,7 +58,9 @@ do_sutare = ->
 
     div.animate
       opacity: 0
-    , 6000
+    ,
+      duration: 6000
+      complete: -> div.remove()
 
 maybe_old = ->
   fresh_sites = [
