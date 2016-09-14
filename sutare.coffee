@@ -56,6 +56,10 @@ do_sutare = ->
 
     $('body').append div
 
+    div.animate
+      opacity: 0
+    , 4000
+
 maybe_old = ->
   fresh_sites = [
     'twitter'

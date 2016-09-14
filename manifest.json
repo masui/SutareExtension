@@ -1,7 +1,7 @@
 {
     "name": "SutareExtension",
     "short_name": "SutareExtension",
-    "version": "0.3.16",
+    "version": "0.3.17",
     "manifest_version": 2,
     "description": "古さに応じて表示を汚くする",
 
