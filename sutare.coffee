@@ -42,7 +42,7 @@ do_sutare = ->
       .css 'left','0'
       .css 'background-color','#ff0'
       .css 'opacity', '0.3'
-      .css 'pointer-events', 'none'
+      .css 'pointer-events', 'none'    # イベントが透過するように
       .css 'font-size', '100px'
       .css 'line-height', '100px'
       .css 'text-align', 'center'
@@ -58,13 +58,14 @@ do_sutare = ->
 
     div.animate
       opacity: 0
-    , 4000
+    , 6000
 
 maybe_old = ->
   fresh_sites = [
     'twitter'
     'tumblr'
     'facebook'
+    'amazon'
     ]
   old = true
   for site in fresh_sites
