@@ -15,10 +15,10 @@ xpi: js
 #
 # Chromeエクステンション公開用のzipを作る
 #
-ZIPFILES=manifest.json sutare.js exports.js jquery-2.1.4.min.js icons
+ZIPFILES=manifest.json sutare.js exports.js jquery-2.1.4.min.js icons/sutare-48.png icons/sutare-96.png
 zip: js
 	/bin/rm -f sutare.zip
-	zip -r sutare.zip ${XPIFILES}
+	zip -r sutare.zip ${ZIPFILES}
 
 # Firefox拡張機能を署名する
 # manifest.json中のバージョン番号を更新してから動かすこと

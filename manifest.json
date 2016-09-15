@@ -1,7 +1,7 @@
 {
-    "name": "SutareExtension",
-    "short_name": "SutareExtension",
-    "version": "0.3.19",
+    "name": "Sutare_Extension",
+    "short_name": "Sutare_Extension",
+    "version": "0.0.2",
     "manifest_version": 2,
     "description": "古さに応じて表示を汚くする",
 
@@ -11,7 +11,7 @@
     
     "applications": {
 	"gecko": {
-	    "id": "sutare@pitecan.com",
+	    "id": "sutare.extension@pitecan.com",
 	    "strict_min_version": "45.0"
 	}
     },
