@@ -7,7 +7,7 @@ js:
 #
 # Firefox拡張機能用のxpiを作る
 #
-XPIFILES=manifest.json sutare.js exports.js jquery-2.1.4.min.js privacy.html
+XPIFILES=manifest.json sutare.js jquery-2.1.4.min.js privacy.html
 xpi: js
 	/bin/rm -f sutare.xpi
 	zip -r sutare.xpi ${XPIFILES}
@@ -15,7 +15,7 @@ xpi: js
 #
 # Chromeエクステンション公開用のzipを作る
 #
-ZIPFILES=manifest.json sutare.js exports.js jquery-2.1.4.min.js icons/sutare-48.png icons/sutare-96.png
+ZIPFILES=manifest.json sutare.js jquery-2.1.4.min.js icons/sutare-48.png icons/sutare-96.png
 zip: js
 	/bin/rm -f sutare.zip
 	zip -r sutare.zip ${ZIPFILES}
