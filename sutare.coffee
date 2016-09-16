@@ -68,6 +68,7 @@ maybe_old = ->
     'tumblr'
     'facebook'
     'amazon'
+    'google'
     ]
   old = true
   for site in fresh_sites
