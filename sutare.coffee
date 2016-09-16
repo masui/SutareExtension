@@ -15,7 +15,7 @@ days_since_writtendate = ->
   get_text $('body')
   now = new Date()
   for text in texts
-    if m = text.match /(\d\d\d\d)[年\.-](\d\d?)[月\.-](\d\d?)日?/
+    if m = text.match /(\d\d\d\d)[年\/\.\-](\d\d?)[月\/\.\-](\d\d?)日?/
       date = new Date("#{m[1]}/#{m[2]}/#{m[3]}")
   if date
     (now.getTime() - date.getTime()) / (24 * 60 * 60 * 1000)
